@@ -25,10 +25,6 @@ describe file('/boot/grub/grub.conf') do
 #  it { should contain 'password --encrypted $1$DtqMg$89/7KkOsfVqNhRhL8PJ0w1' }
 end
 
-#describe package('vmware-tools-esx-kmods') do
-#  it { should be_installed }
-#end
-
 describe user('user1') do
   it { should exist }
   it { should have_home_directory '/home/user1' }

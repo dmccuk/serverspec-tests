@@ -7,6 +7,6 @@ describe interface('eth0') do
 end
 
 describe default_gateway do
-  its(:ipaddress) { should eq '192.168.43.1' }
+#  its(:ipaddress) { should eq '192.168.43.1' }
   its(:interface) { should eq 'eth0'          }
 end
